@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "2.0 portfolio",
   "main": "index.js",
-  "homepage": "https://hoangnguyen1991.github.io/portfolio.github.io/",
+  "homepage": "https://hoangnguyen1991.github.io/portfolio/",
   "scripts": {
     "sass": "node-sass -w scss/ -o css/ --recursive",
-    "deploy": "gh-pages -d main_website"
+    "deploy": "gh-pages -d dist"
   },
   "author": "sh@dy",
   "license": "ISC",
