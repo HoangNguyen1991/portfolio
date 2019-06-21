@@ -1,0 +1,77 @@
+//widescreen 
+@include mediaXL{
+    .project{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+//desktop & laptop  
+@include mediaL{
+    .project{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+//tablet & small laptop 
+@include mediaM{
+    main{
+        align-items: center;
+        text-align: center;
+
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    ul.menu-nav,div.menu-branding{
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+    }
+    .menu-nav{
+        height: 75vh;
+        transform: translate3d(-100%,0,0);
+        font-size: 24px;
+    }
+    .menu-branding{
+        height: 25vh;
+        transform: translate3d(100%,0,0);
+        .portrait{
+            background: url();
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .about-info{
+        grid-template: 
+        'bioimage'
+        'bio'
+        'projectlaptop'
+        'projectpowerbank';
+
+        grid-template-columns: 1fr;
+    }
+
+    .project{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+//phone
+@include mediaS{
+    main#home h1{
+      margin-top: 10vh;
+    }
+    
+    .project{
+        grid-template-columns: 1fr;
+    }
+}
+
+
