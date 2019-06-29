@@ -1,14 +1,14 @@
 //widescreen 
 @include mediaXL{
-    .project{
-        grid-template-columns: repeat(4, 1fr);
+    .project-work{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 //desktop & laptop  
 @include mediaL{
-    .project{
-        grid-template-columns: repeat(3, 1fr);
+    .project-work{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -58,7 +58,7 @@
         grid-template-columns: 1fr;
     }
 
-    .project{
+    .project-work{
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -69,7 +69,7 @@
       margin-top: 10vh;
     }
     
-    .project{
+    .project-work{
         grid-template-columns: 1fr;
     }
 }
